@@ -130,11 +130,16 @@
   padding-top: 20px;
   width: 240px;
   background-color: #212121;
-  margin-top: -25px;
-  height: 95vh;
+  margin-top: -27px;
+  height: 100vh;
   overflow-y: auto;
 }
 
+@media only screen and (max-width: 1368px) {
+  .nav-section {
+    height: 95vh;
+  }
+}
 .nav-section::-webkit-scrollbar {
   width: 10px;
   height: 50px;

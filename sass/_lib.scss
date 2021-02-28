@@ -1,0 +1,21 @@
+$header-color: #212121;
+$body-color: #181818;
+$border-color: #373737;
+
+@mixin anchor($decoration, $block) {
+      text-decoration: $decoration;
+      display: $block;
+}
+
+@mixin flexBox($al, $jus) {
+      display: flex;
+      align-items: $al;
+      justify-content: $jus;
+}
+
+@mixin click($color){
+      display: inline-block;
+      border: none;
+      outline: none;
+      background-color: $color;
+}

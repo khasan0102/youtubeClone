@@ -87,7 +87,11 @@
             background-color: #302d2d;
       }
 }
-
+@media only screen and (max-width: 750px) {
+      .nav-icon{
+            display: none;
+      }
+}
 
 @media only screen and (max-width: 600px) {
       .site-header{

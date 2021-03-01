@@ -29,10 +29,10 @@
       </div>
       <div class="header-search-box">
         <div class="input-box">
-          <input type="text" placeholder="Search" />
-          <button><i class="fas fa-search"></i></button>
+          <input type="text" placeholder="Search" id="searchInput"/>
+          <button id="searchBtn"><i class="fas fa-search"></i></button>
         </div>
-        <button><i class="fas fa-microphone"></i></button>
+        <button id="voiceBtn"><i class="fas fa-microphone"></i></button>
       </div>
       <div class="header-icons-box">
         <button><i class="fas fa-video" style="font-size: 20px"></i></button>
@@ -43,7 +43,9 @@
           <img src="images/bell.svg" alt="apps" width="22" height="22" />
         </button>
         <button>
-          <i class="fas fa-user-circle" style="font-size: 25px"></i>
+          <a href="./admin.html">
+            <i class="fas fa-user-circle" style="font-size: 25px"></i>
+          </a>
         </button>
       </div>
     </header>
@@ -214,223 +216,35 @@
         </ul>
       </section>
       <section class="mini-nav">
-        <ul class="mini-nav-list margin-left">
+        <ul class="mini-nav-list">
           <li class="mini-nav-item">
             <a href="#">
-              <img src="images/home.svg" alt="home" width="23" height="23" />
-              home
+              <img src="./images/home.svg" alt="home img" width="20" height="20">
+              Home
             </a>
           </li>
           <li class="mini-nav-item">
             <a href="#">
-              <img src="images/fire.svg" alt="home" width="23" height="23" />
-              trending
+              <img src="./images/fire.svg" alt="home img" width="20" height="20">
+              Trending
             </a>
           </li>
           <li class="mini-nav-item">
             <a href="#">
-              <img
-                src="images/subscription.svg"
-                alt="home"
-                width="23"
-                height="23"
-              />
-              subsription
+              <img src="./images/subscription.svg" alt="home img" width="20" height="20">
+              Subscription
             </a>
           </li>
           <li class="mini-nav-item">
             <a href="#">
-              <img
-                src="images/library.svg"
-                alt="liblary"
-                width="23"
-                height="23"
-              />
-              liblary
+              <img src="./images/library.svg" alt="home img" width="20" height="20">
+              Liblary
             </a>
           </li>
         </ul>
       </section>
-
       <section class="videos-box">
         <ul class="videos-list" id="videoList">
-          <li class="videos-item">
-            <div class="video-box">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/wYzspcKsHSU"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <img
-                src="https://i.ytimg.com/vi/wYzspcKsHSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMBZWxLFqQRThtFZ7J8LAzaR7dnw"
-                alt="video img"
-              />
-              <span class="icon"><img src="images/clock.svg" alt="hello" width="15" height="15" class="new"></span>
-              <span class="icon icon2"><img src="images/history.svg" alt="hello" width="15" height="15" class="new"></span>
-            </div>
-            <div class="video-text-box">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniqBv6tSS6zfHE2UBC9_7HCfZr-qvMqIR1QtQ-X=s88-c-k-c0x00ffffff-no-rj" alt="video icon">
-              Najot Ta'lim moushin grafika
-            </div>
-          </li>
-
-          <li class="videos-item">
-            <div class="video-box">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/wYzspcKsHSU"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <img
-                src="https://i.ytimg.com/vi/wYzspcKsHSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMBZWxLFqQRThtFZ7J8LAzaR7dnw"
-                alt="video img"
-              />
-              <span class="icon"><img src="images/clock.svg" alt="hello" width="15" height="15" class="new"></span>
-              <span class="icon icon2"><img src="images/history.svg" alt="hello" width="15" height="15" class="new"></span>
-            </div>
-            <div class="video-text-box">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniqBv6tSS6zfHE2UBC9_7HCfZr-qvMqIR1QtQ-X=s88-c-k-c0x00ffffff-no-rj" alt="video icon">
-              Najot Ta'lim moushin grafika
-            </div>
-          </li>
-          <li class="videos-item">
-            <div class="video-box">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/wYzspcKsHSU"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <img
-                src="https://i.ytimg.com/vi/wYzspcKsHSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMBZWxLFqQRThtFZ7J8LAzaR7dnw"
-                alt="video img"
-              />
-              <span class="icon"><img src="images/clock.svg" alt="hello" width="15" height="15" class="new"></span>
-              <span class="icon icon2"><img src="images/history.svg" alt="hello" width="15" height="15" class="new"></span>
-            </div>
-            <div class="video-text-box">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniqBv6tSS6zfHE2UBC9_7HCfZr-qvMqIR1QtQ-X=s88-c-k-c0x00ffffff-no-rj" alt="video icon">
-              Najot Ta'lim moushin grafika
-            </div>
-          </li>
-          <li class="videos-item">
-            <div class="video-box">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/wYzspcKsHSU"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <img
-                src="https://i.ytimg.com/vi/wYzspcKsHSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMBZWxLFqQRThtFZ7J8LAzaR7dnw"
-                alt="video img"
-              />
-              <span class="icon"><img src="images/clock.svg" alt="hello" width="15" height="15" class="new"></span>
-              <span class="icon icon2"><img src="images/history.svg" alt="hello" width="15" height="15" class="new"></span>
-            </div>
-            <div class="video-text-box">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniqBv6tSS6zfHE2UBC9_7HCfZr-qvMqIR1QtQ-X=s88-c-k-c0x00ffffff-no-rj" alt="video icon">
-              Najot Ta'lim moushin grafika
-            </div>
-          </li>
-          <li class="videos-item">
-            <div class="video-box">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/wYzspcKsHSU"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <img
-                src="https://i.ytimg.com/vi/wYzspcKsHSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMBZWxLFqQRThtFZ7J8LAzaR7dnw"
-                alt="video img"
-              />
-              <span class="icon"><img src="images/clock.svg" alt="hello" width="15" height="15" class="new"></span>
-              <span class="icon icon2"><img src="images/history.svg" alt="hello" width="15" height="15" class="new"></span>
-            </div>
-            <div class="video-text-box">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniqBv6tSS6zfHE2UBC9_7HCfZr-qvMqIR1QtQ-X=s88-c-k-c0x00ffffff-no-rj" alt="video icon">
-              Najot Ta'lim moushin grafika
-            </div>
-          </li>
-          <li class="videos-item">
-            <div class="video-box">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/wYzspcKsHSU"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <img
-                src="https://i.ytimg.com/vi/wYzspcKsHSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMBZWxLFqQRThtFZ7J8LAzaR7dnw"
-                alt="video img"
-              />
-              <span class="icon"><img src="images/clock.svg" alt="hello" width="15" height="15" class="new"></span>
-              <span class="icon icon2"><img src="images/history.svg" alt="hello" width="15" height="15" class="new"></span>
-            </div>
-            <div class="video-text-box">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniqBv6tSS6zfHE2UBC9_7HCfZr-qvMqIR1QtQ-X=s88-c-k-c0x00ffffff-no-rj" alt="video icon">
-              Najot Ta'lim moushin grafika
-            </div>
-          </li>
-          <li class="videos-item">
-            <div class="video-box">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/wYzspcKsHSU"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <img
-                src="https://i.ytimg.com/vi/wYzspcKsHSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMBZWxLFqQRThtFZ7J8LAzaR7dnw"
-                alt="video img"
-              />
-              <span class="icon"><img src="images/clock.svg" alt="hello" width="15" height="15" class="new"></span>
-              <span class="icon icon2"><img src="images/history.svg" alt="hello" width="15" height="15" class="new"></span>
-            </div>
-            <div class="video-text-box">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniqBv6tSS6zfHE2UBC9_7HCfZr-qvMqIR1QtQ-X=s88-c-k-c0x00ffffff-no-rj" alt="video icon">
-              Najot Ta'lim moushin grafika
-            </div>
-          </li>
-          <li class="videos-item">
-            <div class="video-box">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/wYzspcKsHSU"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <img
-                src="https://i.ytimg.com/vi/wYzspcKsHSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMBZWxLFqQRThtFZ7J8LAzaR7dnw"
-                alt="video img"
-              />
-              <span class="icon"><img src="images/clock.svg" alt="hello" width="15" height="15" class="new"></span>
-              <span class="icon icon2"><img src="images/history.svg" alt="hello" width="15" height="15" class="new"></span>
-            </div>
-            <div class="video-text-box">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniqBv6tSS6zfHE2UBC9_7HCfZr-qvMqIR1QtQ-X=s88-c-k-c0x00ffffff-no-rj" alt="video icon">
-              Najot Ta'lim moushin grafika
-            </div>
-          </li>
           <li class="videos-item">
             <div class="video-box">
               <iframe
@@ -457,18 +271,7 @@
       </section>
     </main>
 
-     <!-- <section class="modal-window">
-         <button><img src="images/cancel.svg" alt="cansel" width="25" height="25"></button>
-        <div class="video-box">
-          <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/wYzspcKsHSU"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-        </div> --></section>
+     
     <script
       src="https://kit.fontawesome.com/5e6aaef0a5.js"
       crossorigin="anonymous"

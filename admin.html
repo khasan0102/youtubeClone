@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Youtube Admin</title>
+  </head>
+  <body>
+    <header class="site-header container">
+      <div class="header-home-box">
+        <div class="nav-icon" id="navBtn">
+          <span class="nav-el"></span>
+          <span class="nav-el"></span>
+          <span class="nav-el"></span>
+        </div>
+        <a href="index.html" class="home-link">
+          <img
+            src="images/Untitled-1.png"
+            alt="youtube icon"
+            width="100"
+            height="30"
+          />
+        </a>
+      </div>
+      <div class="header-icons-box">
+        <button><i class="fas fa-video" style="font-size: 20px"></i></button>
+        <button>
+          <img src="images/apps.svg" alt="apps" width="20" height="20" />
+        </button>
+        <button>
+          <img src="images/bell.svg" alt="apps" width="22" height="22" />
+        </button>
+        <button>
+          <a href="./admin.html">
+            <i class="fas fa-user-circle" style="font-size: 25px"></i>
+          </a>
+        </button>
+      </div>
+    </header>
+
+    <main class="admin-main">
+          <form id="form">
+                <h1>Add your Video :)</h1>
+            <label>
+                  Video Link
+                  <input type="text" placeholder="Your video link" id="videoLink" required>
+            </label>
+            
+            <label>
+                  Img Link
+                  <input type="text" placeholder="Your img link" id="imageLink" required>
+            </label>
+            
+            <label>
+                  Video Title
+                  <input type="text" placeholder="Your video title" id="vtitle" required>
+            </label>
+            <button id="addBtn">Add</button>
+          </form>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/5e6aaef0a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

@@ -63,6 +63,7 @@
     width: 100%;
     font-size: 14px;
     font-weight: 500;
+    margin-top: 7px;
     img {
       height: 40px;
       width: 40px;
@@ -110,6 +111,15 @@
   }
   .videos-item {
     width: 40%;
+  }
+}
+@media only screen and (max-width: 750px){
+  .videos-list{
+    padding: 0;
+  }
+
+  .videos-item{
+    margin: 12px 8px;
   }
 }
 @media only screen and (max-width: 600px) {

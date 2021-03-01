@@ -61,3 +61,14 @@ body{
   max-width: 1920px;
   margin: 0 auto;
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  border: none;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #5c5b5b;
+}

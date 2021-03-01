@@ -3,11 +3,12 @@ let form = document.querySelector('#form');
 form.onsubmit = (e) => {
       e.preventDefault();
       let base = JSON.parse(window.localStorage.getItem('videos'));
-      base.push({
+      let el = {
             iframe: videoLink.value,
             img:imageLink.value,
             title: vtitle.value
-      });
+      };
+      base.push(el);
       videoLink.value = "";
       imageLink.value = "";
       vtitle.value = "";

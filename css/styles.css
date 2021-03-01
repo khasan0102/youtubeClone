@@ -6,6 +6,7 @@
   border-bottom: 0.2px solid #373737;
   position: sticky;
   top: 0;
+  z-index: 100;
   background-color: #181818;
 }
 
@@ -133,6 +134,9 @@
   margin-top: -27px;
   height: 100vh;
   overflow-y: auto;
+  position: fixed;
+  z-index: 10;
+  transition: margin 0.5s ease;
 }
 
 @media only screen and (max-width: 1368px) {
@@ -174,9 +178,11 @@
   padding: 10px 0;
   font-weight: 500;
   text-transform: capitalize;
+  font-size: 14px;
 }
 .nav-item a img {
   margin-right: 15px;
+  height: 20px;
 }
 
 .nav-item:hover {
@@ -192,16 +198,89 @@
   color: #959595;
 }
 
-.subsription {
+.nav-item .subsription {
   font-size: 14px;
   font-weight: 300;
 }
-.subsription img {
+.nav-item .subsription img {
   border-radius: 50%;
+  height: 30px;
+  width: 30px;
 }
 
 .nav-link-active {
   background-color: #383838;
+}
+
+.mini-nav-list {
+  padding: 15px 0;
+  list-style-type: none;
+  background-color: #212121;
+  width: auto;
+  display: inline-block;
+  height: 95vh;
+  position: absolute;
+  top: 0;
+  margin-left: -100%;
+  margin-top: -27px;
+}
+
+.mini-nav-item {
+  margin: 30px 0;
+  padding: 5px;
+}
+.mini-nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: flex;
+}
+.mini-nav-item a img {
+  padding-bottom: 5px;
+  height: 24px;
+}
+
+.mini-nav-item:hover {
+  background-color: #5c5b5b;
+  transition: background-color 0.3s ease;
+}
+
+.margin-left {
+  margin-left: 0;
+}
+
+.margin-left-minus {
+  margin-left: -100%;
+  transition: margin 0.5s ease;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-section {
+    display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .mini-nav-list {
+    margin-top: -8vh;
+    position: fixed;
+    top: 100vh;
+    bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+  }
+}
+.site-main {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 @font-face {
@@ -251,6 +330,11 @@
 body {
   background-color: #181818;
   width: auto;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

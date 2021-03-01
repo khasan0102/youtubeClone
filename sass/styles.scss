@@ -56,3 +56,8 @@ body{
       background-color: $body-color;
       width: auto;
 }
+
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+}

@@ -278,6 +278,16 @@
     z-index: 10;
   }
 }
+@media only screen and (max-height: 815px) {
+  .mini-nav-list {
+    top: 101vh;
+  }
+}
+@media only screen and (max-height: 1400px) {
+  .nav-section {
+    height: 110vh;
+  }
+}
 .videos-box {
   width: 100%;
   height: auto;
@@ -305,6 +315,7 @@
   flex-direction: column;
 }
 .videos-item .video-box {
+  position: relative;
   height: auto;
   width: 100%;
   position: relative;
@@ -322,6 +333,24 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+.videos-item .video-box .icon {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(0, 0, 0, 0.664);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.videos-item .video-box .new {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.747);
 }
 .videos-item .video-text-box {
   display: flex;
@@ -350,6 +379,15 @@
   padding-left: 230px;
   margin: 0 auto;
   padding-left: 70px;
+}
+
+.video-box:hover .icon {
+  display: block;
+  right: 2px;
+  top: 1px;
+}
+.video-box:hover .icon2 {
+  top: 35px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -418,6 +456,61 @@
     width: 30px;
     border-radius: 50%;
     margin-right: 10px;
+  }
+}
+.modal-window {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(61, 59, 59, 0.507);
+  z-index: 100;
+}
+.modal-window .modal-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 10%;
+  top: 6%;
+}
+.modal-window .modal-btn img {
+  width: 25px;
+  height: 25px;
+}
+.modal-window .video-box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-window .iframe {
+  width: 70%;
+  height: 65%;
+}
+
+@media only screen and (max-width: 800px) {
+  .modal-window button {
+    top: 2%;
+    right: 3%;
+  }
+  .modal-window .video-box1 .iframe {
+    width: 80%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .modal-window .video-box1 .iframe {
+    width: 100%;
+    height: 30%;
   }
 }
 .site-main {

@@ -145,3 +145,16 @@
   }
 }
 
+
+@media only screen and (max-height: 815px){
+  .mini-nav-list{
+    top: 101vh;
+  }
+}
+
+
+@media only screen and (max-height: 1400px){
+  .nav-section  {
+    height: 110vh;
+  }
+}
